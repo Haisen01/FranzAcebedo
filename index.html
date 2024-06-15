@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franz acebedo">
+    <title>Temperature Conversion</title>
+    <style>
+        body {
+    font-family : Arial, Helvetica, sans-serif;
+    background-color:lightgray;
+}
+
+h1{
+  color: cyan;
+  text-shadow: 5px 3px 6px black;
+}
+
+form{
+  background-color: whitesmoke;
+  text-align: center;
+  max-width: 350px;
+  margin:auto;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:5px 5px 15px deepskyblue;
+  
+}
+#textBox{
+  text-align: center;
+  width: 50%;
+  font-size: 2em;
+  border: 4px red solid;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+label{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+button{
+  margin-top: 15px;
+  background-color: orangered;
+  border:none;
+  font-size: 1.5em;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color:white;
+  cursor: pointer;
+  
+}
+button:hover{
+  background-color: red;
+}
+
+#result{
+  font-size:1.75em;
+  font-weight:bold;
+}
+        
+        
+        
+        
+        
+        
+        
+    </style>
+    
+    
+</head>
+<body>
+    
+      <form action="">
+    <h1>Temperature conversion</h1>
+    <input type="number" id="textBox" value="0"><br>
+    <input type="radio" id="toFarenheit" name="unit">
+    <label for="toFarenheit">celcius ➡️ farenheit</label><br>
+    
+    
+    
+     <input type="radio" id="toCelcius" name="unit">
+     <label for="toCelcius">farenheit ➡️ celcius</label><br>
+     
+     
+     <button type="button" onclick="convert()">Submit</button>
+     
+     <p id="result"></p>
+    
+  </form>
+    
+    
+    
+    <script>
+        
+        const textBox = document.getElementById("textBox");
+const toFarenheit = document.getElementById("toFarenheit");
+const toCelcius = document.getElementById("toCelcius");
+const result = document.getElementById("result");
+let temp;
+
+
+
+
+function convert(){
+  if (toFarenheit.checked) {
+   temp = Number(textBox.value);
+   temp = temp * 9 / 5 + 32;
+   result.innerText = temp.toFixed(1) +"°F";
+    
+  } else if (toCelcius.checked) {
+     temp = Number(textBox.value);
+    temp = (temp - 32) * (5/9)
+    result.innerText = temp.toFixed(1) + "°C";
+    
+    
+  } else {
+    window.alert("please selcet a unit!")
+    result.textContent = "select a unit"
+  }
+
+  
+}
+        
+        
+        
+    </script>
+    
+    
+    
+</body>
+</html>
