@@ -1,0 +1,90 @@
+body{
+    font-weight: bold; 
+    font-family: Helvetica, sans-serif;
+    color: navy;
+    text-shadow: 5px 5px 5px aqua,5px 5px 5px red;
+ 
+}
+.container{
+    background-image: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+
+img{
+   
+    box-shadow: 7px 7px 7px navy,7px 7px 7px black;
+    border:none;
+    border-radius: 50%;
+    
+}
+h2:hover{
+    font: 30px;
+    text-shadow: 3px 3px 5px darkblue,-2px -2px 3px red;
+    color: aqua;
+}
+
+.content{
+    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+    background-attachment: fixed;
+ background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 420;
+    box-shadow: 10px 10px 10px darkblue,10px 10px 10px skyblue;
+   margin: auto;
+    padding: 15px;    
+   }
+
+.head{
+    padding: 15px;
+    background-color: #4063ff8f;
+    border-radius: 25px;
+    border:none;
+    box-shadow: 7px 7px 7px skyblue;
+}
+.head:hover{
+    border:cyan solid 5px;
+    box-shadow: 7px 7px 7px aquamarine,7px 7px 7px cyan;
+}
+img:hover{
+    border: solid darkblue 5px;
+}
+#head:hover{
+    font-size:40px ;
+    color: aqua;
+    text-shadow: 5px 5px 5px navy,5px 5px 5px cyan;
+}
+p{
+    font-size: 20px;
+}
+p:hover{
+    color: aquamarine;
+     text-shadow: 5px 5px 5px skyblue,5px 5px 5px cyan;
+}
+
+  iframe{
+        border: none;
+        border-radius: 20px;
+        box-shadow: 7px 7px 7px gray,7px 7px 7px black;
+    }
+    
+    iframe:hover{
+        border:solid 4px cyan;
+    }
+    
+a:hover{
+    font-size: 22px;
+    color: cyan;
+    
+}
+a{
+    color: navy;
+}
+a:visited{
+    color: red;
+}
+h1:hover{
+    font-size: 40px;
+}
